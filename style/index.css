@@ -2,39 +2,27 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.logo {
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
-
-.logo img {
-  max-width: 20%;
-}
-
-.moon {
-  max-width: 400px;
-  max-height: 200px;
-  text-align: right;
-}
-
-.images {
-  max-width: 100%;
+img#logo {
+  max-width: 50%;
   height: auto;
 }
 
-h1 {
+.image {
   text-align: center;
+  max-width: auto;
 }
 
-nav {
-  border-bottom: solid black 5px;
+h2 {
+  line-height: 1.5em;
+  height: 3em;
+  overflow: hidden;
 }
+
+header {
+  text-align: center;
+  border-bottom: #1b203d solid 4px;
+}
+
 nav li {
   display: inline-block;
   margin: 0 5px 0 5px;
@@ -58,9 +46,14 @@ nav ul {
   text-align: center;
 }
 
+body {
+  min-height: 1vh;
+  margin: 0;
+}
+
 footer {
   width: 100%;
-  background-color: #000000;
+  background-color: #1b203d;
   color: white;
 }
 
@@ -75,7 +68,7 @@ footer section p {
 }
 
 footer section p a {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 
 footer section ul {
@@ -91,60 +84,170 @@ footer section ul li a:hover {
   text-decoration: underline;
 }
 
-main {
-  max-width: 80%;
+/* index page */
+
+main#home {
+  width: 60%;
   margin: auto;
-  padding-bottom: 30px;
 }
 
-main#home .index {
+/* Product page */
+
+main#products h1 {
+  text-align: center;
+}
+main#products section#games {
   display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+main#products section#games section#filter {
+  flex: 1;
+}
+
+main#products section#games section#filter ul {
+  text-align: left;
+}
+
+main#products section#games section#filter ul a {
+  text-decoration: none;
+  color: rgb(16, 5, 109);
+}
+
+main#products section#games section#filter ul a:hover {
+  text-decoration: underline;
+}
+
+main#products section#games .product {
+  flex: 4;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main#products section#games .product .gamecard {
+  flex: 1;
+  padding: 15px;
+  /*width:30%;*/
+}
+
+.cart {
+  border: 1px solid green;
+  max-width: 600px;
+  min-width: 200px;
+  padding: 20px;
+  margin: auto;
+  left: 50px;
+  bottom: 200px;
+  display: none;
+  background: #fff;
+  flex-direction: column;
+}
+
+.cart-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 0%;
+  background-size: cover;
+}
+
+.checkout-button {
+  background: rgb(0, 97, 0);
+  color: #fff;
+  margin-top: 20px;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main.cart-page {
+  max-width: 400px;
+  margin: 20px auto;
+  background: #efefef;
+  border-radius: 20px 0px;
+  padding: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+main#products section#games .product .gamecard img {
+  height: 150px;
+}
+
+main#products section#games .product .gamecard button {
+  background-color: #04bf68;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: rgb(99, 98, 98) 3px 3px 7px;
+  transition: 0.15s;
+}
+
+main#products section#games .product .gamecard button:hover {
+  cursor: pointer;
+  box-shadow: rgb(99, 98, 98) 5px 5px 7px;
+}
+
+/* About page */
+
+main#about {
+  width: 60%;
+  margin: auto;
+}
+
+/* Contact page */
+
+main#contact {
+  width: 60%;
+  margin: auto;
 }
 
 #contactform {
-  width: 500px;
-  padding: 30px;
-  margin: auto;
+  padding: 25px;
 }
 
 input[type="text"] {
   width: 100%;
-  padding: 10px 20px;
+  padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  text-align: left;
 }
 
 .form-error {
   display: none;
   color: red;
-  font-size: 1em;
+  font-size: 1rem;
   margin-top: 2px;
 }
-.button {
-  padding: 3px;
-  border: 5px 5px 5px 5px;
-  font-size: 16px;
+
+/*Specific*/
+main#specific {
+  text-align: center;
+}
+
+img.image {
+  width: 250px;
 }
 
 @media (max-width: 500px) {
-  main#home {
-    width: 90%;
-    padding: 10px;
-  }
-
-  nav ul li {
-    display: block;
-  }
-  .logo img {
-    max-width: 50%;
-  }
-
-  footer section {
+  #gameslogo {
     flex-direction: column;
   }
-
-  footer section ul {
-    flex: 2;
+  main#home {
+    width: 90%;
+  }
+  footer section {
+    width: 90%;
+  }
+  main#about {
+    width: 90%;
+  }
+  main#contact {
+    width: 90%;
   }
 }

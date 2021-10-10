@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gamehub | Home</title>
     <link href="style/index.css" rel="stylesheet" />
-    <meta
-      name="description"
-      content="The home page of my first ever website."
-    />
+    <title>GameHub | Games</title>
+    <meta name="description" content="GameHub`s game site" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
   <body>
     <header>
-      <img src="GameHub_Logo.jpg" alt="GameHub logo" id="logo" />
-
+      <img src="GameHub_Logo.jpg" alt="GameHub_Logo" id="logo" />
       <nav>
         <ul>
-          <li><a href="index.html" class="current"> Home</a></li>
-          <li><a href="product.html"> Games</a></li>
+          <li><a href="index.html"> Home</a></li>
+          <li><a href="product.html" class="current"> Games</a></li>
           <li><a href="about.html"> About us</a></li>
           <li><a href="contact.html"> Contact us</a></li>
         </ul>
       </nav>
     </header>
-    <main id="home">
-      <section>
-        <h1>Welcome to GameHub's offical website!</h1>
-        <p>
-          On this site you can buy and sell games for whatever platform you may
-          have.
-        </p>
-        <section class="image">
-          <img
-            src="Rocket league bilde Frontend – Kopi.jpg"
-            alt="Rocket league gamelogo"
-          />
-          <img
-            src="Gaming bilde.jpg"
-            alt="Gaming picture showing a keyboard, mouse and a headset"
-          />
+    <main id="products">
+      <h1>Games</h1>
+      <section id="games">
+      
+        <section id="filter">
+          <ul>
+            <li><a href="">Playstation 4 & 5</a></li>
+            <li><a href="">Xbox One & X</a></li>
+            <li><a href="">PC</a></li>
+            <li><a href="">Used games</a></li>
+          </ul>
         </section>
+        <div class="product">
+        </div>
       </section>
+      <div class="cart">
+        <div class="cart-list"></div>
+        <div class="total">Total:</div>
+        <a href="cart.html" class="checkout-button">Checkout</a>
+      </div>
     </main>
     <footer>
       <section>
@@ -56,4 +55,5 @@
       </section>
     </footer>
   </body>
+  <script src="js/products.js" type="module"></script>
 </html>
