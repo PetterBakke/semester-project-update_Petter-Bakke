@@ -1,0 +1,191 @@
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.logo img {
+  max-width: 20%;
+}
+
+.moon {
+  max-width: 400px;
+  max-height: 200px;
+  text-align: right;
+}
+
+.images {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  border-bottom: solid black 5px;
+}
+nav li {
+  display: inline-block;
+  margin: 0 5px 0 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(16, 5, 109);
+}
+
+nav a.current {
+  text-decoration: underline;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  padding: 0px;
+  text-align: center;
+}
+
+footer {
+  max-width: auto;
+  background-color: #000000;
+  color: white;
+}
+
+footer section {
+  width: 60%;
+  margin: auto;
+  display: flex;
+}
+
+footer section p {
+  flex: 4;
+}
+
+footer section p a {
+  color: #ffffff;
+}
+
+footer section ul {
+  flex: 1;
+}
+
+footer section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer section ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 100%;
+  margin: 0px;
+  padding: 30px;
+}
+
+.main {
+  margin: 0px;
+  padding: 30px;
+}
+
+main#home .index {
+  margin: 0px;
+  padding: 30px;
+  display: flex;
+  padding-bottom: 30px;
+}
+
+#contactform {
+  width: 500px;
+  padding: 30px;
+  margin: auto;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 1em;
+  margin-top: 2px;
+}
+.button {
+  padding: 3px;
+  border: 5px 5px 5px 5px;
+  font-size: 16px;
+}
+
+@media (max-width: 320px) {
+  main#home {
+    width: 90%;
+    padding: 10px;
+  }
+
+  main#about {
+    width: 90%;
+  }
+
+  main#guide {
+    width: 90%;
+  }
+
+  main#contact {
+    width: 90%;
+  }
+
+  footer div {
+    width: 90%;
+  }
+
+  #contactform {
+    width: 90%;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  main#home {
+    width: 90%;
+    padding: 10px;
+  }
+
+  main#about {
+    width: 90%;
+  }
+  main#guide {
+    width: 90%;
+  }
+
+  main#contact {
+    width: 100%;
+  }
+
+  footer div {
+    width: 90%;
+  }
+
+  #contactform {
+    width: 90%;
+    padding: 5px;
+  }
+}
